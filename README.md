@@ -7,27 +7,34 @@ impactan en el peso de las personas.
 ## 1. Rutinas
 
 
-**Requerimiento** De una rutina se espera poder calcular cuantas calorías quema durante el 
-tiempo que se practique.
+**Requerimiento**
+ De una rutina se espera poder calcular cuantas 
+ calorías quema durante el tiempo que se practique.
+ 
 
 
 En este sistema se contemplan 4 tipos de rutina: Running, Maratón, Remo y Remo
 de competición.
 
-Independiente de cual es la rutina, siempre la fórmula para saber cuántas
-calorías baja una rutina depende del tiempo que se practique  y una intensidad
+Independiente de cual es la rutina,
+ siempre la fórmula para saber cuántas
+calorías baja una rutina depende del tiempo 
+que se practique  y una intensidad
 con la siguiente fórmula:
 
 - `100 * (tiempo - descanso) * intensidad`
 
-- El tiempo es algo que siempre se le dice a la rutina al momento de consultar cuantas calorías quema
+- El tiempo es algo que siempre se le dice a la rutina 
+al momento de consultar cuantas calorías quema
 
-- El descanso y la intensidad dependerá del caso según se detalla:
+- El descanso y la intensidad 
+dependerá del caso según se detalla:
 
 
 ### Running
 
 - La intensidad se establece para cada rutina en especial
+
 - El descanso es de 5 minutos si el tiempo es mayor a 20, si no 2.
 
 **Ejemplo:** **correr en la playa** es una actividad de running de intensidad 1.2
@@ -35,7 +42,8 @@ con la siguiente fórmula:
 - Al practicarse por 90 minutos quemará `100 * (90-5) * 1.2 = 10200`
 
 ## Maratón
-Es un tipo especial de Running con la siguiente diferencia:
+Es un tipo especial de Running con la siguiente
+ diferencia:
 
 - Las calorías que gasta siempre es el doble de una rutina de running común
 
@@ -57,8 +65,11 @@ Es un tipo especial de Running con la siguiente diferencia:
 Es un tipo especial de Remo con las siguientes diferencias:
 
 - La intensidad es siempre 1.7
-- El descanso son 3 minutos menos de lo que se descansa en una rutina de remo normal. Pero
-ojo, si ese valor es menor a 2, entonces es 2 (Tip: usar el método max de los números)
+- El descanso son 3 minutos menos de lo que se descansa en una rutina de remo normal.
+ Pero
+ojo, si ese valor es menor a 2,
+ entonces es 2 
+ (Tip: usar el método max de los números)
 
 **Ejemplo:** **remar en el camino de los remeroes** es una actividad de remo de competición 
 - Al practicarse por 5 minutos quemará `100 * (5 - 2) * 1.7 = 510`
@@ -69,16 +80,23 @@ ojo, si ese valor es menor a 2, entonces es 2 (Tip: usar el método max de los n
 
 Las personas hacen distintas rutinas de ejercicios. 
 
-El tiempo que ejercitan una rutina depende del tipo de persona en cuestión
+El tiempo que ejercitan una rutina depende 
+del tipo de persona en cuestión
 
-Cuidado, no siempre pueden hacer una rutina, cada tipo de persona tiene su regla 
+Cuidado, no siempre pueden hacer una rutina, 
+cada tipo de persona tiene su regla 
 
-Cuando realizan una rutina su peso baja una cantidad de kilos 
+Cuando realizan una rutina su peso baja
+ una cantidad de kilos 
 que dependerá de la cantidad de calorías que quema la rutina durante el tiempo 
-en que la persona la practica, y de la cantidad de kilos por caloría que 
+en que la persona la practica,
+
+ y de la cantidad de kilos por caloría que 
 que depende tipo de persona:
 
-Peso que pierde al hacer una rutina: `calorias que baja la rutina en el tiempo que la practica / kilosPorCaloríaQuePierde `
+Peso que pierde al hacer una rutina: 
+
+`calorias que baja la rutina en el tiempo que la practica / kilosPorCaloríaQuePierde `
 
 Mientras que la primera parte de la fórmula se resolvió en el punto anterior, la segunda se detalla
 para cada tipo de persona:
@@ -116,7 +134,9 @@ para cada tipo de persona:
 ### Personas atletas
 
 Las personas atletas tienen una variación en su fórmula para
-calcular el peso al practicar una rutina, porque siempre pierden
+calcular el peso al practicar una rutina,
+
+ porque siempre pierden
 un kilo menos que el resto de las personas 
 
 - Formula de peso que se pierde al hacer una rutina: ` (calorias que baja la rutina / kilosPorCaloría) - 1 ` 
@@ -146,11 +166,22 @@ Un **club** tiene varios predios
 De un **predio** se conoce las rutinas que se pueden practicar
 Se pide:
 
-- El mejor predio de un club para una persona: Es la sucursal que más calorías le 
-haría quemar a esa persona si ésta practicara todas las rutinas una vez
+- El mejor predio de un club 
+para una persona: 
 
-- Los predios tranquis de un club  para una persona: Es el conjunto de predios que tienen al menos
-una rutina que le hace perder menos de 500 calorias a la persona
+Es el predio que más calorías le 
+haría quemar a esa persona 
+
+si ésta practicara todas las rutinas
+ una vez
+
+- Los predios tranquis de un club 
+ para una persona:
+ 
+  Es el conjunto de predios que 
+  tienen al menos
+una rutina que le hace perder 
+menos de 500 calorias a la persona
 
 - Las rutinas más exigentes del club para una persona: Es el conjunto
 formado por la rutina más exigente de cada predio para esa persona. La rutina más 
